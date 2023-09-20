@@ -17,8 +17,16 @@
 				top: 50%;
 				left: 50%;
 				transform: translate(-50%,-50%);
+				
 			}
-			
+			.autoajustable {
+				position: relative; /* Necesario para posicionamiento */
+    			top: 50%; /* Lleva el elemento a la mitad vertical */
+    			transform: translateY(-50%); /* Centra verticalmente el contenido */
+  				align-items: center; /* Centra verticalmente */
+				left: 38%;
+  
+			}
 			h1{
 				font-family: 'Sacramento', cursive;
 				color: #FE7696;
@@ -32,7 +40,7 @@
 			}
 			
 			.rose{
-				width: 200px;
+				width: 325px;
 				height: 200px;
 				position: absolute;
 				right: 0;
@@ -162,8 +170,10 @@
     <link href="https://fonts.font.im/css?family=Sacramento" rel="stylesheet">
 <div class="container">
 			<div class="letter">
-				<h1>Tu sonrisa es tan bella como la rosa, espero que siempre puedas sonreír. </h1>
+				<h1 class="autoajustable">Tu sonrisa es tan bella como la rosa, espero que siempre puedas sonreír. </h1>
 			</div>
+			<br>
+		
 			<div class="rose">
 				<div class="flower">
 					<div class="petal"></div>
